@@ -1,0 +1,201 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Bohannon, Fan, Geerts, Jia, and
+  Kementsietsidis}{Bohannon et~al\mbox{.}}{2007}]%
+        {bohannon2007conditional}
+\bibfield{author}{\bibinfo{person}{Philip Bohannon}, \bibinfo{person}{Wenfei
+  Fan}, \bibinfo{person}{Floris Geerts}, \bibinfo{person}{Xibei Jia}, {and}
+  \bibinfo{person}{Anastasios Kementsietsidis}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Conditional functional dependencies for data
+  cleaning}. In \bibinfo{booktitle}{\emph{ICDE}}. \bibinfo{pages}{746--755}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fan, Geerts, Jia, and Kementsietsidis}{Fan
+  et~al\mbox{.}}{2008}]%
+        {fan2008conditional}
+\bibfield{author}{\bibinfo{person}{Wenfei Fan}, \bibinfo{person}{Floris
+  Geerts}, \bibinfo{person}{Xibei Jia}, {and} \bibinfo{person}{Anastasios
+  Kementsietsidis}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Conditional functional dependencies for capturing
+  data inconsistencies}.
+\newblock \bibinfo{journal}{\emph{TODS}} \bibinfo{volume}{33},
+  \bibinfo{number}{2} (\bibinfo{year}{2008}), \bibinfo{pages}{6}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Franklin, Kossmann, Kraska, Ramesh, and
+  Xin}{Franklin et~al\mbox{.}}{2011}]%
+        {franklin2011crowddb}
+\bibfield{author}{\bibinfo{person}{Michael~J Franklin}, \bibinfo{person}{Donald
+  Kossmann}, \bibinfo{person}{Tim Kraska}, \bibinfo{person}{Sukriti Ramesh},
+  {and} \bibinfo{person}{Reynold Xin}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{CrowdDB: answering queries with crowdsourcing}. In
+  \bibinfo{booktitle}{\emph{SIGMOD}}. \bibinfo{pages}{61--72}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hearst}{Hearst}{1992}]%
+        {hearst1992automatic}
+\bibfield{author}{\bibinfo{person}{Marti~A Hearst}.}
+  \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{Automatic acquisition of hyponyms from large text
+  corpora}. In \bibinfo{booktitle}{\emph{Coling}}. \bibinfo{pages}{539--545}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kolahi and Lakshmanan}{Kolahi and
+  Lakshmanan}{2009}]%
+        {kolahi2009approximating}
+\bibfield{author}{\bibinfo{person}{Solmaz Kolahi} {and}
+  \bibinfo{person}{Laks~VS Lakshmanan}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{On approximating optimum repairs for functional
+  dependency violations}. In \bibinfo{booktitle}{\emph{ICDT}}.
+  \bibinfo{pages}{53--62}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Qin, Cheng, Zhang, and Zhou}{Li
+  et~al\mbox{.}}{2008}]%
+        {li2015trip}
+\bibfield{author}{\bibinfo{person}{Zhixu Li}, \bibinfo{person}{Lu Qin},
+  \bibinfo{person}{Hong Cheng}, \bibinfo{person}{Xiangliang Zhang}, {and}
+  \bibinfo{person}{Xiaofang Zhou}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{TRIP: An Interactive Retrieving-Inferring Data
+  Imputation Approach}.
+\newblock \bibinfo{journal}{\emph{TKDE}} (\bibinfo{year}{2008}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Sharaf, Sitbon, Du, and Zhou}{Li
+  et~al\mbox{.}}{2014}]%
+        {li2014core}
+\bibfield{author}{\bibinfo{person}{Zhixu Li}, \bibinfo{person}{Mohamed~A
+  Sharaf}, \bibinfo{person}{Laurianne Sitbon}, \bibinfo{person}{Xiaoyong Du},
+  {and} \bibinfo{person}{Xiaofang Zhou}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{CoRE: a context-aware relation extraction method
+  for relation completion}.
+\newblock \bibinfo{journal}{\emph{TKDE}} \bibinfo{volume}{26},
+  \bibinfo{number}{4} (\bibinfo{year}{2014}), \bibinfo{pages}{836--849}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Sharaf, Sitbon, Sadiq, Indulska, and
+  Zhou}{Li et~al\mbox{.}}{2012}]%
+        {li2012webput}
+\bibfield{author}{\bibinfo{person}{Zhixu Li}, \bibinfo{person}{Mohamed~A
+  Sharaf}, \bibinfo{person}{Laurianne Sitbon}, \bibinfo{person}{Shazia Sadiq},
+  \bibinfo{person}{Marta Indulska}, {and} \bibinfo{person}{Xiaofang Zhou}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Webput: Efficient web-based data imputation}. In
+  \bibinfo{booktitle}{\emph{WISE}}. \bibinfo{pages}{243--256}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mikheev, Moens, and Grover}{Mikheev
+  et~al\mbox{.}}{1999}]%
+        {mikheev1999named}
+\bibfield{author}{\bibinfo{person}{Andrei Mikheev}, \bibinfo{person}{Marc
+  Moens}, {and} \bibinfo{person}{Claire Grover}.}
+  \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Named entity recognition without gazetteers}. In
+  \bibinfo{booktitle}{\emph{ACL}}. \bibinfo{pages}{1--8}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shen, Chang, and Li}{Shen
+  et~al\mbox{.}}{2007}]%
+        {shen2007combined}
+\bibfield{author}{\bibinfo{person}{Jau-Ji Shen}, \bibinfo{person}{Chin-Chen
+  Chang}, {and} \bibinfo{person}{Yu-Chiang Li}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Combined association rules for dealing with missing
+  values}.
+\newblock \bibinfo{journal}{\emph{Journal of Information Science}}
+  (\bibinfo{year}{2007}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Rao, et~al\mbox{.}}{Wang
+  et~al\mbox{.}}{2002}]%
+        {wang2002empirical}
+\bibfield{author}{\bibinfo{person}{Qihua Wang}, \bibinfo{person}{JNK Rao},
+  {et~al\mbox{.}}} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Empirical likelihood-based inference under
+  imputation for missing response data}.
+\newblock \bibinfo{journal}{\emph{The Annals of Statistics}}
+  \bibinfo{volume}{30}, \bibinfo{number}{3} (\bibinfo{year}{2002}),
+  \bibinfo{pages}{896--924}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wu, Wun, and Chou}{Wu et~al\mbox{.}}{2004}]%
+        {wu2004using}
+\bibfield{author}{\bibinfo{person}{Chih-Hung Wu}, \bibinfo{person}{Chian-Huei
+  Wun}, {and} \bibinfo{person}{Hung-Ju Chou}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Using association rules for completing missing
+  data}. In \bibinfo{booktitle}{\emph{HIS}}. \bibinfo{pages}{236--241}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ye and Wang}{Ye and Wang}{2014}]%
+        {ye2014capture}
+\bibfield{author}{\bibinfo{person}{Chen Ye} {and} \bibinfo{person}{Hongzhi
+  Wang}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Capture Missing Values Based on Crowdsourcing}. In
+  \bibinfo{booktitle}{\emph{Wireless Algorithms, Systems, and Applications}}.
+  \bibinfo{pages}{783--792}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhang}{Zhang}{2008}]%
+        {zhang2008parimputation}
+\bibfield{author}{\bibinfo{person}{Shichao Zhang}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Parimputation: From Imputation and Null-Imputation
+  to Partially Imputation.}
+\newblock \bibinfo{journal}{\emph{IEEE Intelligent Informatics Bulletin}}
+  \bibinfo{volume}{9}, \bibinfo{number}{1} (\bibinfo{year}{2008}),
+  \bibinfo{pages}{32--38}.
+\newblock
+
+
+\end{thebibliography}
