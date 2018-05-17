@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.14)  14 MAY 2018 15:13
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.14)  17 MAY 2018 15:41
 entering extended mode
-**C:/Users/shan/Desktop/4.*CIKM*2018/webput-demo.tex
-("C:/Users/shan/Desktop/4. CIKM 2018/webput-demo.tex"
+**//VBOXSVR/Downloads/4.*CIKM*2018/webput-demo.tex
+("//VBOXSVR/Downloads/4. CIKM 2018/webput-demo.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-("C:\Users\shan\Desktop\4. CIKM 2018\acmart.cls"
+("\\VBOXSVR\Downloads\4. CIKM 2018\acmart.cls"
 Document Class: acmart 2018/04/14 v1.53 Typesetting articles for the Associatio
 n for Computing Machinery
 (C:\CTEX\MiKTeX\tex\latex\xkeyval\xkeyval.sty
@@ -607,7 +607,7 @@ Include comment 'anonsuppress'
 LaTeX Warning: Unused global option(s):
     [sigconf].
 
-("C:\Users\shan\Desktop\4. CIKM 2018\webput-demo.aux")
+("\\VBOXSVR\Downloads\4. CIKM 2018\webput-demo.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -672,8 +672,8 @@ LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
 
-("C:\Users\shan\Desktop\4. CIKM 2018\webput-demo.out")
-("C:\Users\shan\Desktop\4. CIKM 2018\webput-demo.out")
+("\\VBOXSVR\Downloads\4. CIKM 2018\webput-demo.out")
+("\\VBOXSVR\Downloads\4. CIKM 2018\webput-demo.out")
 \@outlinefile=\write5
 
 (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
@@ -735,117 +735,127 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 Package hyperref Warning: Option `pdflang' has already been used,
-(hyperref)                setting the option has no effect on input line 79.
+(hyperref)                setting the option has no effect on input line 86.
 
 
 Package hyperref Warning: Option `pdfdisplaydoctitle' has already been used,
-(hyperref)                setting the option has no effect on input line 79.
+(hyperref)                setting the option has no effect on input line 86.
+
+
+Overfull \hbox (5.38083pt too wide) in paragraph at lines 93--96
+[]\OT1/cmr/m/n/8 (-20) Existing im-pu-ta-tion meth-od-s to the gen-er-al type o
+f non-quantitive
+ []
 
 Package epstopdf Info: Source file: <images/Architecture.eps>
-(epstopdf)                    date: 2015-10-07 15:32:26
+(epstopdf)                    date: 2015-10-07 23:32:26
 (epstopdf)                    size: 599769 bytes
 (epstopdf)             Output file: <images/Architecture-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-07 17:22:51
+(epstopdf)                    date: 2015-10-08 01:22:52
 (epstopdf)                    size: 79344 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/Architecture-eps-con
 verted-to.pdf images/Architecture.eps>
-(epstopdf)             \includegraphics on input line 102.
+(epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 <images/Architecture-eps-converted-to.pdf, id=57, 571.13374pt x 280.04625pt>
 File: images/Architecture-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Architecture-eps-converted-to.pdf>
 Package pdftex.def Info: images/Architecture-eps-converted-to.pdf used on input
- line 102.
-(pdftex.def)             Requested size: 256.0748pt x 125.56241pt.
+ line 111.
+(pdftex.def)             Requested size: 199.16928pt x 97.65869pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1.1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
-]<<ot1tt.cmap>> [2.2 <C:/Users/shan/Desktop/4. CIKM 2018/images/Architecture-ep
-s-converted-to.pdf>]
-Overfull \hbox (1.86836pt too wide) in paragraph at lines 188--189
-$[]$ \OT1/cmr/m/n/9 (-20) Giv-en a query tem-plate say [\OT1/cmtt/m/n/9 TITLE,
+]
+Overfull \hbox (2.37675pt too wide) in paragraph at lines 152--154
+$[]$ \OT1/cmr/m/n/8 (-20) In con-trast to s-e-lec-tion mak-ing, crowd
+ []
+
+<<ot1tt.cmap>> [2.2 <//VBOXSVR/Downloads/4. CIKM 2018/images/Architecture-eps-c
+onverted-to.pdf>]
+Overfull \hbox (6.17375pt too wide) in paragraph at lines 200--201
+$[]$ \OT1/cmr/m/n/8 (-20) This method learn-s com-mon terms
  []
 
 Package epstopdf Info: Source file: <images/process_.eps>
-(epstopdf)                    date: 2015-05-01 10:39:58
+(epstopdf)                    date: 2015-05-01 18:39:58
 (epstopdf)                    size: 1386308 bytes
 (epstopdf)             Output file: <images/process_-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-01 11:33:45
+(epstopdf)                    date: 2015-05-01 19:33:46
 (epstopdf)                    size: 840536 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/process_-eps-convert
 ed-to.pdf images/process_.eps>
-(epstopdf)             \includegraphics on input line 222.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 <images/process_-eps-converted-to.pdf, id=135, 1927.2pt x 1063.975pt>
 File: images/process_-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/process_-eps-converted-to.pdf>
 Package pdftex.def Info: images/process_-eps-converted-to.pdf used on input lin
-e 222.
-(pdftex.def)             Requested size: 512.1496pt x 282.74754pt.
- [3.3]
+e 234.
+(pdftex.def)             Requested size: 426.79134pt x 235.61754pt.
 Package epstopdf Info: Source file: <images/crowd.eps>
-(epstopdf)                    date: 2015-10-07 15:47:08
+(epstopdf)                    date: 2015-10-07 23:47:08
 (epstopdf)                    size: 586310 bytes
 (epstopdf)             Output file: <images/crowd-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-07 17:22:52
+(epstopdf)                    date: 2015-10-08 01:22:52
 (epstopdf)                    size: 111093 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/crowd-eps-converted-
 to.pdf images/crowd.eps>
-(epstopdf)             \includegraphics on input line 240.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/crowd-eps-converted-to.pdf, id=150, 474.77374pt x 645.41125pt>
+<images/crowd-eps-converted-to.pdf, id=136, 474.77374pt x 645.41125pt>
 File: images/crowd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/crowd-eps-converted-to.pdf>
 Package pdftex.def Info: images/crowd-eps-converted-to.pdf used on input line 2
-40.
-(pdftex.def)             Requested size: 227.62204pt x 309.4295pt.
+52.
+(pdftex.def)             Requested size: 199.16928pt x 270.75574pt.
+ [3.3]
+("\\VBOXSVR\Downloads\4. CIKM 2018\webput-demo.bbl" [4.4 <//VBOXSVR/Downloads/4
+. CIKM 2018/images/process_-eps-converted-to.pdf> <//VBOXSVR/Downloads/4. CIKM 
+2018/images/crowd-eps-converted-to.pdf>]) [5.5
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
 
-
-("C:\Users\shan\Desktop\4. CIKM 2018\webput-demo.bbl"
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4.4 <C:/Users/shan/Desktop/4. CIKM 2018/images/process_-eps-converted-to.pdf>
-]) [5.5 <C:/Users/shan/Desktop/4. CIKM 2018/images/crowd-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
-
-("C:\Users\shan\Desktop\4. CIKM 2018\webput-demo.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
+("\\VBOXSVR\Downloads\4. CIKM 2018\webput-demo.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `webput-demo.out' has not changed.
 (rerunfilecheck)             Checksum: 1FE3930D096E3BF366D48E86AF1FB6EB;1568.
  ) 
 Here is how much of TeX's memory you used:
- 13544 strings out of 495354
- 192918 string characters out of 3183859
- 355137 words of memory out of 3000000
- 16147 multiletter control sequences out of 15000+200000
- 16599 words of font info for 109 fonts, out of 3000000 for 9000
+ 13528 strings out of 495354
+ 192684 string characters out of 3183859
+ 357137 words of memory out of 3000000
+ 16139 multiletter control sequences out of 15000+200000
+ 15545 words of font info for 103 fonts, out of 3000000 for 9000
  175 hyphenation exceptions out of 8191
- 60i,12n,94p,976b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,94p,1381b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cmextra/cmex9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
-C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmssbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
-9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/CTEX/MiKTeX/
+ts/type1/public/amsfonts/cm/cmbx8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
+C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmssbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
+8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/CTEX/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on webput-demo.pdf (5 pages, 1323553 bytes).
+Output written on webput-demo.pdf (5 pages, 1325166 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
- 14964 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 15476 words of extra memory for PDF output out of 17280 (max. 10000000)
 

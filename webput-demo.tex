@@ -16,6 +16,7 @@
 
 
 \begin{document}
+\small
 \title{WebPut: A Web-Aided Data Imputation System for the General Type of Missing String Attribute Values}
 
 \author{Shuangli Shan}
@@ -33,9 +34,15 @@
 
 \author{Yang Li}
 \affiliation{%
-  \institution{xxxxx}
+  \institution{The School of Computer Science and Technology, Soochow University, China}
 }
 \email{xxxxx}
+
+\author{Qiang Yang}
+\affiliation{%
+  \institution{The School of Computer Science and Technology, Soochow University, China}
+}
+\email{qiangyanghm@hotmail.com}
 
 \author{Jia Zhu}
 \affiliation{%
@@ -47,7 +54,7 @@
 \affiliation{%
   \institution{The University of Queensland, Brisbane, Australia}
 }
-\email{fmsharaf, zxfg@itee.uq.edu.au}
+\email{fmsharaf@itee.uq.edu.au}
 
 \author{Xiaofang Zhou}
 \affiliation{%
@@ -94,12 +101,14 @@ Why not use a much cheaper and within reach knowledge depository, i.e., the Web,
 The four advantages above motivate us to develop a Web-Aided Data Imputation (or {\bf WebPut} for short) system, which implements a web-based data imputation module, and finds ways to integrate the web-based imputation with existing inferring-based data imputation methods. Besides, a crowdsourcing component is incorporated to seek advice from human to help control the quality of imputation results from the Web in a cost-efficient way.
 %
 To make WebPut a general imputation tool for various types of missing textual values, the current system takes every textual value of a particular type (like numeric, email address, currency) as a kind of string, based on which we design all our imputation techniques on the string data only. As a future work, we will integrate the imputation techniques that are specially designed for some particular data type into the system.
+
+
 %WebPut utilizes existing attribute values in conjunction with data consistency principle to provide estimations for the missing attribute values, or automatically generates and selects qualified search queries to retrieve the value from the web.
 %
 
 \begin{figure}
   % Requires \usepackage{graphicx}
-  \centerline{\includegraphics[width=9cm]{images/Architecture.eps}}
+  \centerline{\includegraphics[width=7cm]{images/Architecture.eps}}
   \caption{The System Architecture of WebPut}
   \label{fig:architecture}
 \end{figure}
@@ -115,7 +124,7 @@ Figure~\ref{fig:architecture} shows the building blocks of WebPut. Basically, th
 \noindent{\bf 2) Imputation Core:} The imputation approaches we adopt in WebPut include both traditional inferring-based imputation method and retrieving-based imputation method.
 
 \noindent\underline{\it (1) Inferring-based Imputation:}
-The Inferring-based imputation approach we adopt in WebPut relies on data constraints, such as FD/CFDs, to infer the missing values from the complete part of the dataset~\cite{kolahi2009approximating, fan2008conditional}.
+The Inferring-based imputation APPROACH we adopt in WebPut relies on data constraints, such as FD/CFDs, to infer the missing values from the complete part of the dataset~\cite{kolahi2009approximating, fan2008conditional}.
 
 
 \noindent\underline{\it (2) Retrieving-based Imputation:}
@@ -158,7 +167,8 @@ In contrast to selection making, crowd workers can also make direct value sugges
 In this section, we introduce the challenges we meet in WebPut towards effective and efficient data imputation and the corresponding solutions we propose.
 
 \subsection{Retrieving Query Formulation}
-To effectively retrieve a missing attribute value in an incomplete tuple from the Web, the retrieving-based method utilizes the available information in the incomplete tuple in conjunction with the data consistency principles, and extends effective IE methods for the purpose of formulating web search queries. Specifically, we face two challenges here: (1) For a missing attribute value $v$ in an incomplete tuple $t=[x_1,x_2 , ... \Box, ... x_n]$ (where $\Box$ denotes the position of $v$ in $t$), all the existing attribute values could possibly be utilized in various combinations as the ``keywords'' in a imputation query, but will bring much noises with a large overhead as most of these queries are not very selective. As an alternative, we find ways to estimate the effectiveness of every possible combinations, by which we can identify a number of combinations that work the best for the missing value $v$ in $t$.
+
+{\color{red} The Web is not clean at all, thus we may take the risk to bring web noises into the local database. Existing work on web data extraction estimates the quality of the extraction according to various factors , such as the employed patterns and the confidence of various web sources. But in our case, the quality of each formulated retrieving query also needs to be taken into account. }To effectively retrieve a missing attribute value in an incomplete tuple from the Web, the retrieving-based method utilizes the available information in the incomplete tuple in conjunction with the data consistency principles, and extends effective IE methods for the purpose of formulating web search queries. Specifically, we face two challenges here: (1) For a missing attribute value $v$ in an incomplete tuple $t=[x_1,x_2 , ... \Box, ... x_n]$ (where $\Box$ denotes the position of $v$ in $t$), all the existing attribute values could possibly be utilized in various combinations as the ``keywords'' in a imputation query, but will bring much noises with a large overhead as most of these queries are not very selective. As an alternative, we find ways to estimate the effectiveness of every possible combinations, by which we can identify a number of combinations that work the best for the missing value $v$ in $t$.
 %The challenge here is that search queries must be carefully formulated to minimize the number of retrieving operations and  quality control mechanism must be developed\\
 %
 (2) For each combination of existing attribute values, we also need some ``auxiliary information'' to bridge between the query keywords and the target missing value $v$, such that we can define the purpose of an imputation query and improve the selectivity of the query towards the purpose.
@@ -210,16 +220,18 @@ Compared to the inferring-based imputation, the retrieving-based imputation is a
 To take advantage of both methods, we propose to combine the two methods together in doing the imputation.
 
 In particular, we perform inferring and retrieving alternatively based on a simple principle: identifying the minimum set of missing values for retrieving to maximize the number of values that can be inferred.
+
+{\color{red}The inferring step fills all inferred missing values to the maximum extent, and the subsequent retrieval step retrieves a selected set of missing values so that a set of unfilled missing values can be inferred at the next inferring step. We keep on repeating the two steps until there is no more missing values can be imputed.}
 %
 However, some missing values are only inferable when certain blanks are filled with specific imputed values, which can not be predicted a prior. So the selection of values for retrieving will have an impact on the succeeding inferring and retrieving step.
 
-To achieve the optimal scheduling scheme, the basic rule is to retrieve only two kinds of values: 1) those can't be inferred even all the other missing values are imputed (un-inferable), and 2) those form an {\em inference deadlock} with some other missing values, where an inference deadlock refers to a group of missing values, in which each value in the group is possible to be inferred only when some other values in the group are imputed firstly.
+To achieve the optimal scheduling scheme {\color{red}that can fill all missing string values at the minimum web consultation cost}, the basic rule is to retrieve only two kinds of values: 1) those can't be inferred even all the other missing values are imputed (un-inferable), and 2) those form an {\em inference deadlock} with some other missing values, where an inference deadlock refers to a group of missing values, in which each value in the group is possible to be inferred only when some other values in the group are imputed firstly.
 %
 In our implementation, we build an inference dependency graph when it comes to the retrieving step, and then introduce a scheduling algorithm to identify the minimum set of missing values for retrieving. More details about this have to be omitted due to space limitation and can instead be found in~\cite{li2015trip}.
 
 \begin{figure*}
   % Requires \usepackage{graphicx}
-  \centerline{\includegraphics[width=18cm]{images/process_.eps}}
+  \centerline{\includegraphics[width=15cm]{images/process_.eps}}
   \caption{Demonstration of Imputing Process of WebPut}
   \label{fig:process}
 \end{figure*}
@@ -237,7 +249,7 @@ WebPut is designed to outsource crowdsourcing tasks in parallel, thus multiple w
 
 \begin{figure}[!htb]
   % Requires \usepackage{graphicx}
-  \centerline{\includegraphics[width=8cm]{images/crowd.eps}}
+  \centerline{\includegraphics[width=7cm]{images/crowd.eps}}
   \caption{Two Types of Crowdsoucing Tasks}
   \label{fig:crowdsource}
 \end{figure}
@@ -256,7 +268,7 @@ WebPut can exhibit the process of interactive inferring and retrieving step by s
 \noindent{\bf 3) Unfold Imputation Process:} Besides displaying imputed results to users, WebPut keeps track of how each imputation value comes into being. As a result, if users are curious about how a specific missing value is imputed, they can double click on the data item and imputation information related to that data will popup. %These provenance information is of great significance to researches, for whom the source where these imputed data come from matters.
 
 \noindent{\bf 4) Live Interaction (User or Crowd Worker Input):}
-This is the most interesting part. Every SIGMOD attendee is encouraged to participate in the demonstration either as a user or as a crowd worker. As a user, one can name a new data set for imputation or input any new person's name and email to the current data set to see if WebPut can get all the rest contact information for the person. As a crowd worker, one can experience how a crowd worker works in the system.
+This is the most interesting part. Every CIKM attendee is encouraged to participate in the demonstration either as a user or as a crowd worker. As a user, one can name a new data set for imputation or input any new person's name and email to the current data set to see if WebPut can get all the rest contact information for the person. As a crowd worker, one can experience how a crowd worker works in the system.
 % as crowdsourcing workers. During the demonstration, users can simply login our system and help to improve imputed result. %\Change{\sout{The contributions of crowd workers can be visually exhibited on the dashboard.}}
 %
 Also, we will make our system online after the conference.
